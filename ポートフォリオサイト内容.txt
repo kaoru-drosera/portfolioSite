@@ -1,0 +1,11 @@
+1.ヒーロートップ
+・（自己紹介）
+・n.自分のスキルと引き受ける仕事
+・n + 1.制作実績
+・n + 1 + n.価格表
+・nth-last - 1.コンタクトフォーム
+ →twitter,githubリンク
+・nth-last.copyright
+
+
+Desktop\文書はここへ\CORTING\lp_rep\ポートフォリオサイト
