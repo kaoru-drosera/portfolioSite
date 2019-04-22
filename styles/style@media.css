@@ -1,0 +1,24 @@
+@media(max-width: 700px){
+  .pc{
+    display: none;
+  }
+  .ssp{
+    display: block;
+  }
+  .sp{
+    display: none;
+  }
+
+}
+
+
+
+@media(max-width: 500px){
+  .ssp{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+
+}
