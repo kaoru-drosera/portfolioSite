@@ -1,3 +1,22 @@
+/* 全体設定 */
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+body{
+  font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+  color: #707070;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/* 全体設定ここまで */
+
+/* 基本的な設定 */
 .pc{
   display: block;
 }
@@ -7,3 +26,343 @@
 .sp{
   display: none;
 }
+.brsp{
+  display: none;
+}
+.container{
+  margin: 0 auto;
+  padding: 75px 40px;
+  max-width: 1200px;
+  text-align: center;
+
+  /*　↑ containerには、
+  margin横のautoと
+  text-alignのcenterだけは
+  忘れてはならない。 */
+
+  /* min-width: 800px; */
+  /* ↑containerにmin-witdhは
+  設定しない方がいいかも。
+  「containerがbody要素から
+  はみ出てしまう」という
+  バグの原因になってしまった。 */
+
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+  /* ↑clearfixは、floatを設定した
+  タグにかけてしまいがちだが誤りだ。
+  clearfixは設定した要素の
+  親タグにかけるのだ！ */
+}
+.h2wrap h2,
+.topttl{
+  font-size: 50px;
+}
+.h2wrap p,
+.topSubTtl{
+  font-size: 20px;
+}
+/* 基本的な設定ここまで */
+
+/* fixedメニュー */
+
+.fixedMenu{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #13043E;
+}
+.fixedMenu .container{
+  padding: 0px 40px;
+}
+.fixedMenu a{
+  color: #fff;
+}
+.fmenuCont{
+  position: relative;
+  height: 70px;
+}
+.fmenuLeft{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
+  text-align: left;
+}
+.fmenuLeft h1{
+  font-size: 30px;
+}
+.fmenuLeft p{
+  padding-top: 5px;
+  font-size: 12px;
+}
+.fmenuRight{
+  width: 75%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+}
+.Flinklist{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content:space-between;
+
+}
+.fmenuRight li{
+  margin-left: 2%;
+  display: block;
+}
+.fmenuRight a{
+  padding: 22px 0;
+  display: block;
+}
+.fRburg{
+  display: none;
+}
+
+/* fixedメニューここまで */
+
+/* ヒーロートップ */
+
+.heroTop{
+  background: url("../images/431138-PE6FWY-817.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+.heroTop .container{
+  height: 100%;
+  position: relative;
+}
+.HTcont{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.topTtlwrap p{
+  padding-top: 8px;
+}
+.topBtnWrap{
+  padding-top: 20px;
+}
+.topBtnWrap a{
+  padding: 15px 40px;
+  margin: 0 10px;
+  border-radius: 8px;
+  display: inline-block;
+  /* a要素でボタンを作る時、
+  「ボタンの親タグにpaddingが効かない！」
+  と感じたら、ボタン自体のタグに
+  「display: inline-block;」
+  を入れてみよう。 */
+}
+.toGreet{
+  background-color: #fff;
+  color: #707070;
+}
+.toContactForm{
+  background-color: #4E6680;
+  color: #fff;
+}
+
+
+/* ヒーロートップここまで */
+
+/* 自己紹介 */
+
+.greet,
+.pricesEts{
+  background-color: #F2EEEE;
+}
+.faceIcon,
+.greetContents{
+  width: 50%;
+}
+.faceIcon{
+  float: left;
+}
+.greetContents{
+  float: right;
+}
+.greetContents{
+  padding: 22px;
+}
+.greetDl{
+  padding: 11px 0;
+  text-align: left;
+}
+.greetDt{
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.greetDd,
+.skillDocs{
+  font-size: 16px;
+  line-height: 20px;
+  /* ↑「行のスペースが狭すぎるな…」
+  と感じたら、「line-height」プロパティで
+  行間を開けよう。
+  ただし、「どのぐらいスペースを空けたいか」を
+  そのまま設定すると失敗するぞ！ */
+
+}
+
+/* 自己紹介ここまで */
+
+/* スキル */
+.skills{
+  background: url("../images/1584.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.skillsBg{
+  background-color: rgba(254, 254, 254, 0.7);
+  border-radius: 25px;
+  padding: 75px 18px;
+}
+.skillWrap{
+  width: 33.3333%;
+  padding: 20px;
+  float: left;
+  text-align: left;
+  line-height: 22px;
+}
+.skillH3{
+  font-weight: bold;
+  font-size: 24px;
+}
+.
+
+/* スキルここまで */
+
+/* ポートフォリオ */
+
+
+
+/* ポートフォリオここまで */
+
+/* 価格・対応形態 */
+
+.tableCont{
+  margin: auto;
+}
+.tableWrap{
+  margin: auto;
+}
+.prices,
+.timeTable{
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+}
+.tableTtl{
+  text-align: left;
+  font-size: 24px;
+  padding: 18px 0 6px;
+
+}
+.tableCont table{
+}
+.tableCont th,
+.tableCont td{
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 18px;
+  font-size: 16px;
+  text-align: left;
+}
+.prices th,
+.timeTable th{
+  /* cellspacing: 10px 0 0; */
+  background-color: #707070;
+  color: #fff;
+}
+
+/* 価格・対応形態ここまで */
+
+/* フォーム */
+
+.contactForm{
+  background: url("../images/2766.jpg") no-repeat;
+  background-size: cover;
+}
+.contactForm .h2wrap{
+  color: #fff;
+}
+.C_Form{
+  padding: 30px 0 0;
+  max-width: 400px;
+  margin: auto;
+}
+#mes,#subm{
+  width: 100%;
+  float: left;
+}
+textarea[name="message"],
+input[type="submit"]{
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+textarea[name="message"]:focus,
+input[type="submit"]:focus{
+  outline: 0;
+}
+textarea[name="message"]{
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 24px;
+  color: #fff;
+  padding: 10px 18px;
+}
+input[type="submit"]{
+  padding: 10px 0;
+  margin: 20px 0 0;
+  font-size: 22px;
+  background-color: rgba(78, 102, 128, 0.4);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* フォームここまで */
+
+/* コピーライト */
+
+.copyright{
+  background-color: #363636;
+  color: #fff;
+}
+.copyright .container{
+  padding: 10px 40px;
+}
+
+/* コピーライトここまで */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
