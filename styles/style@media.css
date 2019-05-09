@@ -51,17 +51,30 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .fRburgO li:nth-of-type(1){
+  .fRburgO{
+    width: 35px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fRburg1 li:nth-of-type(1){
     position: absolute;
     top: 40%;
     right: 0;
     transform: translate(0,-40%);
     transform: rotate(-45deg) ;
   }
-  .fRburgO li:nth-of-type(2){
+  .fRburg1 li:nth-of-type(2){
     display: none;
   }
-  .fRburgO li:nth-of-type(3){
+  .fRburg1 li:nth-of-type(3){
     position: absolute;
     top: 40%;
     right: 0;
@@ -103,6 +116,12 @@
 
 
   /* ヒーロートップ */
+  .heroTop{
+    background: url("../images/431138-PE6FWY-817.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 700px;
+  }
   .HTcont{
     width: 60%;
   }
@@ -139,10 +158,29 @@
   }
   .faceIcon{
     float: left;
+    padding: 30px 30px 0 30px;
+
   }
   .greetContents{
     float: left;
   }
+  .FiconBorder{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #707070;
+    border-radius: 50%;
+  }
+  .FiconWrap{
+    margin: 0;
+  }
+  .FiconWrap i{
+    font-size: 150px;
+    margin: 20px 0 30px;
+    color: #707070;
+    display: block;
+  }
+
   .greetDl{
     padding: 11px 0;
     text-align: center;
@@ -176,12 +214,40 @@
     line-height: 22px;
   }
   .skillsBg{
-    padding: 50px 35px;
+    padding: 50px 100px;
   }
+  .skillH3{
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
 
   /* スキルここまで */
 
   /* ポートフォリオ */
+
+  .pfLeft{
+    float: initial;
+    width: 100%;
+  }
+  .pfLeft img{
+    width: 60%;
+    margin: auto;
+  }
+  .pfRight{
+    float: initial;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+
+  }
+  .pfslide_inner{
+    width: 80% ;
+    margin: auto;
+  }
 
 
 
@@ -242,5 +308,20 @@
   }
 
   /* 基本的な設定ここまで */
+
+  /* スキル */
+  .skillWrap{
+    width: 100%;
+    padding: 25px 0px;
+    float: initial;
+    text-align: center;
+    line-height: 22px;
+  }
+  .skillsBg{
+    padding: 50px 35px;
+  }
+
+  /* スキルここまで */
+
 
 }

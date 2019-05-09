@@ -6,14 +6,22 @@
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/style@media.css">
   <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/swiper.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+  <script src="../jQ/jquery-3.3.1.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>花田香ポートフォリオサイト</title>
 </head>
 <body>
 
-  <!-- <p>制作開始:20190430</p> -->
+  <!--
+  <p>制作開始:20190430</p>
+  <p>HTML/CSSコーディング(portfolio以外):2019/05/01(2日/推定16h)</p>
+  <p>HTML/CSSコーディング(portfolio。内容、仕上げがまだ。):2019/05/03(1日/推定2h)</p>
+
+
+
+ -->
 
   <!--
   アイコン集
@@ -49,14 +57,16 @@
             <li><a href="#form" class="Flink">お問い合わせ</a></li>
           </ul>
 
-          <ul class="fRburg">
-            <!-- ↑ここにjQで「fRburgO」というクラスを
-            クリックがあるごとに
-            出したりしまったりさせること。 -->
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="fRburg">
+            <ul class="fRburgO">
+              <!-- ↑ここにjQで「fRburgO」というクラスを
+              クリックがあるごとに
+              出したりしまったりさせること。 -->
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
           </div>
 
 
@@ -80,10 +90,10 @@
 
   </div>
 
-  <div class="heroTop">
+  <section class="heroTop">
     <div class="container">
       <div class="HTcont">
-        <div class="topTtlwrap">
+        <div class="topTtlwrap QD Q2">
           <h1 class="topttl">花田 香</h1>
           <p class="topSubTtl">@WEBコーダー<br class="brsp">＆WEBライター</p>
         </div>
@@ -101,34 +111,38 @@
         clearfixは設定した要素の
         親タグにかけるのだ！  -->
 
-          <div class="btnwrap clearfix">
+          <div class="btnwrap clearfix QD Q2">
             <a href="#greet" class="toGreet">自己紹介</a>
             <a href="#form" class="toContactForm">相談する</a></div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- div.greet>div.container>(div.h2wrap>(h2+p))+div.greetWrap>((div.faceIcon)+(div.greetContents>dl.greetDl*3>dt.greetDt+dd.greetDd)) -->
-  <div id="greet" class="greet">
+  <section id="greet" class="greet">
     <div class="container">
-      <div class="h2wrap">
+      <div class="h2wrap JQ Q2">
         <h2>自己紹介</h2>
         <p>How about me</p>
       </div>
       <div class="greetWrap clearfix">
-        <div class="faceIcon">
-
+        <div class="faceIcon JQ Q2">
+          <div class="FiconWrap">
+            <div class="FiconBorder">
+              <i class="fas fa-male"></i>
+            </div>
+          </div>
         </div>
         <div class="greetContents">
-          <dl class="greetDl clearfix">
+          <dl class="greetDl clearfix JQ Q2">
             <dt class="greetDt">自己紹介</dt>
             <dd class="greetDd">
               <p>「花田香（はなだ　かおる）」と申します。現在「就労移行支援事業所TIO神保町」で、WEBエンジニア就職に向けてHTML/CSSを始めとしたプログラミングの勉強をしております。</p>
               <p>どうぞよろしくお願いいたします。</p>
             </dd>
           </dl>
-          <dl class="greetDl clearfix">
+          <dl class="greetDl clearfix JQ Q2">
             <dt class="greetDt">学歴</dt>
             <dd class="greetDd">
               <p>・共栄学園高校特進コース卒業</p>
@@ -136,7 +150,7 @@
               <p>・就労移行支援事業所「TIO神保町」入所</p>
             </dd>
           </dl>
-          <dl class="greetDl clearfix">
+          <dl class="greetDl clearfix JQ Q2">
             <dt class="greetDt">資格</dt>
             <dd class="greetDd">
               <p>Illustrator® クリエイター能力認定試験</p>
@@ -146,22 +160,24 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- div.skills>div.container>(div.skillsBg(div.h2wrap>h2+p)>div.skillCont>(div.skillWrap*3>(h3.skillH3+(div.skillicon>div.iconBorder>div.icon)+div.skillDocs))) -->
-  <div id="skills" class="skills">
+  <section id="skills" class="skills">
     <div class="container">
-      <div class="skillsBg">
-        <div class="h2wrap">
+      <div class="skillsBg JQ Q2">
+        <div class="h2wrap JQ Q2">
           <h2>スキル</h2>
           <p>skills</p>
         </div>
         <div class="skillCont clearfix">
-          <div class="skillWrap">
+          <div class="skillWrap JQ Q2">
             <h3 class="skillH3">WEBコーディング</h3>
             <div class="skillicon">
-              <div class="iconBorder">
-                <div class="icon"></div>
+              <div class="SiconBorder">
+                <div class="Sicon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
               </div>
             </div>
             <div class="skillDocs">
@@ -169,11 +185,14 @@
               <p>提出したデザインデータを基に、インターネットで表示できるホームページに仕上げます。</p>
             </div>
           </div>
-          <div class="skillWrap">
+          <div class="skillWrap JQ Q2">
+            <!-- skillwrapは、出現時にディレイがかかるようにしたい！ -->
             <h3 class="skillH3">レスポンシブ<br class="brpc">デザイン</h3>
             <div class="skillicon">
-              <div class="iconBorder">
-                <div class="icon"></div>
+              <div class="SiconBorder">
+                <div class="Sicon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
               </div>
             </div>
             <div class="skillDocs">
@@ -181,11 +200,13 @@
               <p>スマートフォンでもきれいなデザインに仕上がるサイトを作成いたします。</p>
             </div>
           </div>
-          <div class="skillWrap">
+          <div class="skillWrap JQ Q2">
             <h3 class="skillH3">ライティング業務</h3>
             <div class="skillicon">
-              <div class="iconBorder">
-                <div class="icon"></div>
+              <div class="SiconBorder">
+                <div class="Sicon">
+                  <i class="fas fa-pencil-alt"></i>
+                </div>
               </div>
             </div>
             <div class="skillDocs">
@@ -196,32 +217,146 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 
   <!-- div.portfolio>div.container>(div.h2wrap>(h2+p))+div.slider-nextAndprev+div.pfCont -->
-  <div id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="container">
-      <div class="h2wrap">
+      <div class="h2wrap JQ Q2">
         <h2>ポートフォリオ</h2>
         <p>portfolio</p>
       </div>
-      <div class="slider-nextAndprev"></div>
-      <div class="pfCont"></div>
+      <div class="pfCont JQ Q2">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide clearfix">
+              <!-- ↑「swiperのボタンをスライドから外に出したい！」
+              というときには、swiper-slideの中にもう一つdivで囲いを作り、
+              widthを100%以下にしてmargin:auto;で中央寄せすること。
+              「swiper-container>swiper-wrapper>swiper-slide」
+              この3つの中に囲いは作らない事。作動しなくなるぞ。 -->
+              <div class="pfslide_inner">
+                <div class="pfLeft">
+                  <img src="../images/5075.jpg" alt="kuyou">
+                </div>
+                <div class="pfRight">
+                  <!-- h3.phh3+dl.pfdl*4>(dt+dd) -->
+                  <h3 class="phh3">ランディングページ</h3>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide clearfix">
+              <div class="pfslide_inner">
+                <div class="pfLeft">
+                  <img src="../images/5075.jpg" alt="kuyou">
+                </div>
+                <div class="pfRight">
+                  <!-- h3.phh3+dl.pfdl*4>(dt+dd) -->
+                  <h3 class="phh3">ランディングページ</h3>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide clearfix">
+              <div class="pfslide_inner">
+                <div class="pfLeft">
+                  <img src="../images/5075.jpg" alt="kuyou">
+                </div>
+                <div class="pfRight">
+                  <!-- h3.phh3+dl.pfdl*4>(dt+dd) -->
+                  <h3 class="phh3">ランディングページ</h3>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+                  <dl class="pfdl">
+                    <dt>実装機能</dt>
+                    <dd>fixedメニュー</dd>
+                  </dl>
+
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">
+              <div class="pfLeft"></div>
+              <div class="pfRight"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pfLeft"></div>
+              <div class="pfRight"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pfLeft"></div>
+              <div class="pfRight"></div>
+            </div> -->
+          </div>
+          <div class="Elwrap">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="pfAle JQ Q2">
+        <p class="pfAlert">※紹介したランディングページは</p>
+        <p class="pfAlert">すべて模写になります。</p>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- div.pricesEts>div.container>(div.h2wrap>(h2+p))+(table.prices>p.tableTtl+(tr*3>th+td))+(table.timeTable>p.tableTtl+(tr>tt+td)) -->
-  <div id="pricesEts" class="pricesEts">
+  <section id="pricesEts" class="pricesEts">
     <div class="container">
-      <div class="h2wrap">
+      <div class="h2wrap JQ Q2">
         <h2>価格・対応形態</h2>
         <p>price & workstyle</p>
       </div>
       <div class="tableCont">
         <div class="tableWrap">
-          <table class="prices clearfix" border="1">
+          <table class="prices JQ Q2 clearfix" border="1">
             <caption class="tableTtl">価格</caption>
             <tr class="clearfix">
               <th>LP（ランディングページ）制作</th>
@@ -236,7 +371,7 @@
               <td>3000円/記事（5000字）</td>
             </tr>
           </table>
-          <table class="timeTable clearfix" border="1">
+          <table class="timeTable JQ Q2 clearfix" border="1">
             <caption class="tableTtl">対応形態</caption>
             <tr class="clearfix">
               <th>連絡可能時間</th>
@@ -246,32 +381,35 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- div.contactForm>div.container>(div.h2wrap>(h2+p))+div.C_FormWrap>(form.C_Form>(label[for=mes]>textarea#mes[name=message])+(label[for=subm]>input#subm[name=submit type=submit value=送信])) -->
-  <div id="form" class="contactForm">
+  <section id="form" class="contactForm">
     <div class="container">
-      <div class="h2wrap">
+      <div class="h2wrap JQ Q2">
         <h2>お問い合わせ</h2>
         <p>contact</p>
       </div>
-      <div class="C_FormWrap">
+      <div class="C_FormWrap JQ Q2">
         <form action="" class="C_Form clearfix">
-          <label for="mes"><textarea name="message" id="mes" cols="30" rows="7"></textarea></label>
+          <label for="mes"><textarea name="message" id="mes" cols="30" rows="7" placeholder="コメントは現在休止中です"></textarea></label>
           <label for="subm"><input type="submit" id="subm" name="submit" value="送信"></label>
         </form>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- div.copyright>div.container>p.copyright -->
-  <div class="copyright">
+  <section class="copyright">
+    <!-- copyrightがスクロールできないため
+    表示されないままになってしまった。 -->
     <div class="container">
       <p class="copyright">images: freepik</p>
       <p class="copyright">&copy;kaoru-hanada 2019</p>
     </div>
-  </div>
+  </section>
 
-
+<script src="../jQ/swiper.js"></script>
+<script src="../jQ/kaoruPf+Q.js"></script>
 </body>
 </html>
