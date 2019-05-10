@@ -232,6 +232,19 @@
   .pfLeft{
     float: initial;
     width: 100%;
+    padding-top: 20px;
+  }
+  .phh3{
+    font-size: 18px;
+  }
+  .pfdl dt{
+    background-color: #707070;
+    color: #fff;
+    padding: 5px 0px 5px 5px ;
+    margin-bottom: 5px;
+  }
+  .pfdl dd{
+    margin-bottom: 5px;
   }
   .pfLeft img{
     width: 60%;
