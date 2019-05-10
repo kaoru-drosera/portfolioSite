@@ -4,6 +4,21 @@ var swiper = new Swiper('.swiper-container',{
     prevEl: '.swiper-button-prev',
   },
   loop: true,
+  autoplay: {
+    delay: 9000,
+    disableOnInteraction: true,
+  },
+  pagination:{
+    // ページネーションは、
+    // スライド全体のページ数を
+    // 表示してくれる仕組みのこと。
+    el: '.swiper-pagination',
+    clickable: true,
+    // 「クリックした場所に移動できる」
+    // ようにするには、「clickable: true,」を
+    // 指定する必要がある。
+    type: 'bullets',
+  }
 });
 
 // バーガーメニュー・スムーズスクロール

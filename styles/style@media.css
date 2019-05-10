@@ -246,6 +246,13 @@
   .pfdl dd{
     margin-bottom: 5px;
   }
+  .pfLink{
+    font-size: 14px;
+  }
+  .pfLink i{
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
   .pfLeft img{
     width: 60%;
     margin: auto;
