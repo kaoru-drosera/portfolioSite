@@ -287,6 +287,11 @@ a{
 .greetDt{
   font-size: 28px;
   padding-bottom: 10px;
+  background-color: #707070;
+  color: #fff;
+  padding: 5px 0px 5px 5px ;
+  margin-bottom: 15px;
+
 }
 .greetDd,
 .skillDocs{
